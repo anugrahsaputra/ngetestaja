@@ -11,6 +11,23 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+/* Gaya untuk slideshow */
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 
 /* Header */
 header {
