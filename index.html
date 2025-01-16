@@ -125,10 +125,9 @@
 <body>
 
     <!-- Header -->
-<header>
-    </div>
-    <h1>MTS Darul Ulum Cimahpar</h1>
-    <p>Website Resmi MTS Darul Ulum Cimahpar</p>
+    <header>
+        <h1>MTS Darul Ulum Cimahpar</h1>
+        <p>Website Resmi MTS Darul Ulum Cimahpar</p>
     </header>
 
     <!-- Navigation Bar -->
@@ -140,11 +139,17 @@
     </nav>
 
     <!-- Main Content Section -->
+    <div class="main-content">
+        <div class="left">
+            <!-- Gambar sekolah atau gambar lainnya dapat ditempatkan di sini -->
+            <img src="image.jpg" alt="Gambar Sekolah">
+        </div>
         <div class="right">
             <h2>Selamat Datang di MTS Darul Ulum Cimahpar</h2>
             <p>MTS Darul Ulum Cimahpar adalah sebuah Madrasah Tsanawiyah (MTs) yang terletak di Cimahpar, sebuah wilayah di Kota Bogor, Jawa Barat, Indonesia. MTs ini merupakan salah satu lembaga pendidikan tingkat menengah pertama yang menawarkan kurikulum pendidikan agama Islam dengan kombinasi pelajaran umum.</p>
             <p>Selanjutnya, Anda dapat membaca berita terbaru atau melihat pengumuman penting di bawah ini.</p>
         </div>
+    </div>
 
     <!-- News Section -->
     <div class="news-section" id="news">
@@ -175,26 +180,29 @@
         <p><strong>Email:</strong> <a href="mailto:traa@example.com">traa@example.com</a></p>
     </div>
 
+    <!-- Button Kembali ke Atas -->
+    <button id="backToTop" title="Kembali ke atas" style="display: none; position: fixed; bottom: 20px; right: 20px; background-color: #0071bc; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; text-align: center; cursor: pointer; font-size: 20px;">
+        ↑
+    </button>
+
     <script>
-// Ambil elemen tombol
-const backToTopButton = document.getElementById("backToTop");
+        // Ambil elemen tombol
+        const backToTopButton = document.getElementById("backToTop");
 
-// Ketika pengguna menggulir ke bawah 200px dari atas, tombol akan muncul
-window.onscroll = function() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        backToTopButton.style.display = "block"; // Tampilkan tombol
-    } else {
-        backToTopButton.style.display = "none"; // Sembunyikan tombol
-    }
-};
+        // Ketika pengguna menggulir ke bawah 200px dari atas, tombol akan muncul
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopButton.style.display = "block"; // Tampilkan tombol
+            } else {
+                backToTopButton.style.display = "none"; // Sembunyikan tombol
+            }
+        };
 
-// Ketika tombol diklik, gulir kembali ke atas
-backToTopButton.onclick = function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' }); // Gulir ke atas dengan animasi
-};
+        // Ketika tombol diklik, gulir kembali ke atas
+        backToTopButton.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Gulir ke atas dengan animasi
+        };
     </script>
 
-<!-- Button Kembali ke Atas -->
-<button id="backToTop" title="Kembali ke atas">↑</button>
 </body>
 </html>
