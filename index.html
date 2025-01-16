@@ -1,229 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sekolah Harapan Bangsa</title>
+    <meta name="description" content="Jasa terpercaya untuk memenuhi kebutuhan Anda.">
+    <title>Jasa Terbaik</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
         }
-
-        /* Header */
         header {
-            background: linear-gradient(45deg, #007bff, #1e90ff);
+            background-color: #4CAF50;
             color: white;
-            padding: 20px 10px;
+            padding: 20px;
             text-align: center;
         }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        header p {
-            margin: 5px 0;
-            font-size: 1.2em;
-        }
-
-        /* Navbar */
         nav {
-            background-color: #333;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 14px 20px;
             text-align: center;
-            display: block;
-        }
-
-        nav a:hover {
-            background-color: #575757;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        .hero h2 {
-            font-size: 3em;
-            margin: 0;
-        }
-
-        .hero p {
-            font-size: 1.5em;
             margin: 10px 0;
         }
-
-        .hero button {
-            background-color: #1e90ff;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            font-size: 1em;
-            cursor: pointer;
-            border-radius: 5px;
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            color: #4CAF50;
         }
-
-        .hero button:hover {
-            background-color: #007bff;
+        nav a:hover {
+            text-decoration: underline;
         }
-
-        /* Section */
-        .section {
-            padding: 50px 20px;
-            text-align: center;
+        section {
+            padding: 20px;
         }
-
-        .section h2 {
-            margin-bottom: 20px;
-            font-size: 2em;
-            color: #007bff;
-        }
-
-        .cards {
+        .services {
             display: flex;
-            justify-content: center;
-            gap: 20px;
+            justify-content: space-around;
             flex-wrap: wrap;
         }
-
-        .card {
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
-            width: 300px;
-            text-align: left;
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card h3 {
-            margin: 15px;
-            font-size: 1.5em;
-        }
-
-        .card p {
-            margin: 15px;
-            color: #555;
-        }
-
-        .card a {
-            display: block;
-            margin: 15px;
-            text-decoration: none;
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
+        .service {
+            border: 1px solid #ddd;
             border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
-        .card a:hover {
-            background-color: #1e90ff;
-        }
-
-        /* Footer */
         footer {
-            background-color: #333;
+            background-color: #4CAF50;
             color: white;
             text-align: center;
             padding: 10px 0;
-        }
-
-        footer p {
-            margin: 0;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Jasa Terbaik</h1>
+        <p>Melayani kebutuhan Anda dengan profesionalisme dan kepercayaan</p>
+    </header>
 
-<header>
-    <h1>Sekolah Harapan Bangsa</h1>
-    <p>Menciptakan Generasi Berprestasi</p>
-</header>
+    <nav>
+        <a href="#about">Tentang Kami</a>
+        <a href="#services">Layanan</a>
+        <a href="#contact">Kontak</a>
+    </nav>
 
-<nav>
-    <a href="#tentang">Tentang</a>
-    <a href="#program">Program</a>
-    <a href="#berita">Berita</a>
-    <a href="#kontak">Kontak</a>
-</nav>
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah penyedia jasa terpercaya yang siap membantu kebutuhan Anda. Dengan pengalaman bertahun-tahun, kami memberikan layanan terbaik yang sesuai dengan kebutuhan Anda.</p>
+    </section>
 
-<div class="hero">
-    <h2>Selamat Datang di Sekolah Harapan Bangsa</h2>
-    <p>Pusat Pendidikan untuk Masa Depan Gemilang</p>
-    <button>Pelajari Lebih Lanjut</button>
-</div>
-
-<section id="tentang" class="section">
-    <h2>Tentang Kami</h2>
-    <p>Sekolah Harapan Bangsa adalah lembaga pendidikan yang didedikasikan untuk mencetak generasi unggul melalui pengajaran berkualitas, fasilitas modern, dan program inovatif.</p>
-</section>
-
-<section id="program" class="section">
-    <h2>Program Pendidikan</h2>
-    <div class="cards">
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="PAUD">
-            <h3>Pendidikan Anak Usia Dini (PAUD)</h3>
-            <p>Membangun fondasi awal yang kuat untuk anak-anak melalui pendekatan belajar sambil bermain.</p>
-            <a href="#">Pelajari Lebih Lanjut</a>
+    <section id="services">
+        <h2>Layanan Kami</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Jasa Desain</h3>
+                <p>Kami menyediakan layanan desain grafis profesional untuk kebutuhan bisnis Anda.</p>
+            </div>
+            <div class="service">
+                <h3>Jasa Digital Marketing</h3>
+                <p>Tingkatkan kehadiran online bisnis Anda dengan strategi pemasaran digital kami.</p>
+            </div>
+            <div class="service">
+                <h3>Jasa Konsultasi</h3>
+                <p>Dapatkan solusi terbaik dari para ahli kami untuk masalah bisnis Anda.</p>
+            </div>
         </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="SD">
-            <h3>Sekolah Dasar (SD)</h3>
-            <p>Menanamkan nilai akademik dan moral sejak dini dengan pendekatan holistik.</p>
-            <a href="#">Pelajari Lebih Lanjut</a>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="SMP">
-            <h3>Sekolah Menengah Pertama (SMP)</h3>
-            <p>Membimbing siswa menuju kesuksesan melalui pembelajaran yang kreatif dan inovatif.</p>
-            <a href="#">Pelajari Lebih Lanjut</a>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section id="berita" class="section">
-    <h2>Berita Terbaru</h2>
-    <div class="cards">
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Berita 1">
-            <h3>Pendaftaran Siswa Baru</h3>
-            <p>Daftar sekarang untuk tahun ajaran baru! Tempat terbatas.</p>
-            <a href="#">Selengkapnya</a>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Berita 2">
-            <h3>Prestasi Siswa</h3>
-            <p>Siswa SMP Harapan Bangsa berhasil memenangkan Olimpiade Sains tingkat nasional.</p>
-            <a href="#">Selengkapnya</a>
-        </div>
-    </div>
-</section>
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <p>Email: jasa.terbaik@gmail.com</p>
+        <p>Telepon: +62 812 3456 7890</p>
+    </section>
 
-<footer>
-    <p>&copy; 2025 Sekolah Harapan Bangsa. Semua Hak Dilindungi.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2025 Jasa Terbaik. Semua hak dilindungi.</p>
+    </footer>
 </body>
-  </html>
+</html>
