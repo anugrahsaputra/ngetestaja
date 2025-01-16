@@ -149,3 +149,21 @@ footer {
         margin: 0 10px;
     }
 }
+/* Styling untuk tombol "Kembali ke Atas" */
+#backToTop {
+    display: none; /* Menyembunyikan tombol pada awal */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0071bc;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#backToTop:hover {
+    background-color: #005ea2;
+}
