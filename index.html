@@ -217,7 +217,32 @@
         backToTopButton.onclick = function() {
             window.scrollTo({ top: 0, behavior: 'smooth' }); // Gulir ke atas dengan animasi
         };
-    </script>
+<script>
+    let slideIndex = 0;
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+        
+        // Menyembunyikan semua gambar
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        
+        // Menampilkan gambar berikutnya
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        
+        // Menampilkan gambar yang sesuai dengan slideIndex
+        slides[slideIndex-1].style.display = "block";  
+        
+        // Mengatur slideshow untuk berpindah gambar setiap 3 detik
+        setTimeout(showSlides, 3000);
+    }
+
+    // Memulai slideshow
+    showSlides();
+</script>
+   
 
 </body>
 </html>
