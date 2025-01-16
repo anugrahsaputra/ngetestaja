@@ -1,39 +1,37 @@
-/* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and general text */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
-    color: #333;
 }
 
-/* Header style */
 header {
     background-color: #0071bc;
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
+    position: relative; /* Untuk memastikan posisi Author relatif terhadap header */
 }
 
 header h1 {
-    font-size: 3em;
     margin: 0;
+    font-size: 3em;
 }
 
-header p {
-    font-size: 1.2em;
-    margin-top: 10px;
+#author {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang transparan hitam */
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
-/* Navigation style */
 nav {
     background-color: #005ea2;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -48,43 +46,45 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Main content section style */
 .main-content {
     display: flex;
     justify-content: space-between;
     margin: 20px;
 }
 
-.main-content .left,
-.main-content .right {
+.main-content .left, .main-content .right {
     width: 48%;
 }
 
-.main-content .left img {
+.left img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.main-content .right {
-    background-color: white;
+.right {
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.main-content .right h2 {
+.right h2 {
     color: #0071bc;
 }
 
-.main-content .right p {
-    font-size: 1.1em;
-    line-height: 1.6;
+footer {
+    background-color: #0071bc;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
-/* News section style */
 .news-section {
-    background-color: white;
+    background-color: #ffffff;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -93,8 +93,6 @@ nav a:hover {
 
 .news-section h2 {
     color: #0071bc;
-    font-size: 1.8em;
-    margin-bottom: 20px;
 }
 
 .news-item {
@@ -108,7 +106,6 @@ nav a:hover {
 
 .news-item a {
     color: #0071bc;
-    font-size: 1.2em;
     text-decoration: none;
 }
 
@@ -116,39 +113,18 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Footer style */
-footer {
-    background-color: #0071bc;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.contact-info {
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-content .left,
-    .main-content .right {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-
-    .main-content .right {
-        padding: 15px;
-    }
-
-    nav a {
-        font-size: 1em;
-        margin: 0 10px;
-    }
+.contact-info h3 {
+    color: #0071bc;
 }
+
 /* Styling untuk tombol "Kembali ke Atas" */
 #backToTop {
     display: none; /* Menyembunyikan tombol pada awal */
