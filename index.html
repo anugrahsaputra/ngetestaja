@@ -175,5 +175,24 @@
         <p><strong>Email:</strong> <a href="mailto:traa@example.com">traa@example.com</a></p>
     </div>
 
+    <script>
+// Ambil elemen tombol
+const backToTopButton = document.getElementById("backToTop");
+
+// Ketika pengguna menggulir ke bawah 200px dari atas, tombol akan muncul
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopButton.style.display = "block"; // Tampilkan tombol
+    } else {
+        backToTopButton.style.display = "none"; // Sembunyikan tombol
+    }
+};
+
+// Ketika tombol diklik, gulir kembali ke atas
+backToTopButton.onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Gulir ke atas dengan animasi
+};
+    </script>
+
 </body>
 </html>
