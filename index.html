@@ -3,101 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jasa Sewa Wa terpercaya.">
-    <title>Jasa Sewa Wa Terbaik</title>
+    <meta name="description" content="MTS Darul Ulum Cimahpar - Website Resmi">
+    <title>SMK Negeri 1 Bogor</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
+
         header {
-            background-color: #4CAF50;
+            background-color: #0071bc;
             color: white;
+            text-align: center;
             padding: 20px;
-            text-align: center;
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
         nav {
+            background-color: #005ea2;
+            padding: 10px;
             text-align: center;
-            margin: 10px 0;
         }
+
         nav a {
+            color: white;
+            margin: 0 20px;
             text-decoration: none;
-            margin: 0 15px;
-            color: #4CAF50;
+            font-size: 1.2em;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
-        section {
-            padding: 20px;
-        }
-        .services {
+
+        .main-content {
             display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px;
         }
-        .service {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin: 10px;
+
+        .main-content .left, .main-content .right {
+            width: 48%;
+        }
+
+        .left img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .right {
+            background-color: #ffffff;
             padding: 20px;
-            width: 30%;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
+
+        .right h2 {
+            color: #0071bc;
+        }
+
         footer {
-            background-color: #4CAF50;
+            background-color: #0071bc;
             color: white;
             text-align: center;
             padding: 10px 0;
-            margin-top: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .news-section {
+            background-color: #ffffff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-section h2 {
+            color: #0071bc;
+        }
+
+        .news-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-item a {
+            color: #0071bc;
+            text-decoration: none;
+        }
+
+        .news-item a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
-        <h1>Jasa Sewa Wa Terbaik</h1>
-        <p>Melayani Jasa Sewa wa dengan profesionalisme dan kepercayaan</p>
+        <h1>MTS Darul Ulun Cimahpar</h1>
+        <p>Website Resmi MTS Darul Ulum Cimahpar</p>
     </header>
 
+    <!-- Navigation Bar -->
     <nav>
+        <a href="#home">Beranda</a>
         <a href="#about">Tentang Kami</a>
-        <a href="#services">Layanan</a>
+        <a href="#news">Berita</a>
         <a href="#contact">Kontak</a>
     </nav>
 
-    <section id="about">
-        <h2>Tentang Kami</h2>
-        <p>Kami adalah penyedia jasa Sewa Wa terpercaya yang Memberikan Rate 200p/Chat.</p>
-    </section>
-
-    <section id="services">
-        <h2>Layanan Kami</h2>
-        <div class="services">
-            <div class="service">
-                <h3>Sewa Wa Slow</h3>
-                <p>Kami menyediakan layanan Sewa Wa Slow dengan jeda 5 Chat/Menit, Rate 200p/Chat.</p>
-            </div>
-            <div class="service">
-                <h3>Sewa Wa Cepat</h3>
-                <p>Tingkatkan jeda chat agar lebih banyak mendapat cuan, Sewa Wa Spam cepat memiliki Rate 250p/chat.</p>
-            </div>
-            <div class="service">
-                <h3>Sewa Wa Spam Brutal</h3>
-                <p>Dapatkan solusi terbaik mendapatkan cuan dengan rate 300p/Chat.</p>
-            </div>
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <div class="left">
+            <img src="https://via.placeholder.com/600x350" alt="Image SMK Negeri 1 Bogor">
         </div>
-    </section>
+        <div class="right">
+            <h2>Selamat Datang di MTS Darul Ulum Cimahpar</h2>
+            <p>MTS Darul Ulum Cimahpar adalah sebuah Madrasah Tsanawiyah (MTs) yang terletak di Cimahpar, sebuah wilayah di Kota Bogor, Jawa Barat, Indonesia. MTs ini merupakan salah satu lembaga pendidikan tingkat menengah pertama yang menawarkan kurikulum pendidikan agama Islam dengan kombinasi pelajaran umum.</p>
+            <p>Selanjutnya, Anda dapat membaca berita terbaru atau melihat pengumuman penting di bawah ini.</p>
+        </div>
+    </div>
 
-    <section id="contact">
-        <h2>Kontak Kami</h2>
-        <p>Email: sewawatraa@gmail.com</p>
-        <p>Telepon: +62 812 3456 7890</p>
-    </section>
+    <!-- News Section -->
+    <div class="news-section" id="news">
+        <h2>Berita Terbaru</h2>
+        <div class="news-item">
+            <a href="#">Pengumuman Pendaftaran Siswa Baru 2025</a>
+        </div>
+        <div class="news-item">
+            <a href="#">MTS Darul Ulum Cimahpar Juara Lomba Kompetensi Siswa 2024</a>
+        </div>
+        <div class="news-item">
+            <a href="#">Kegiatan Persami Kelas 7</a>
+        </div>
+    </div>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Sewa Wa Terbaik. Semua hak dilindungi.</p>
+        <p>&copy; 2025 MTS Darul Ulum Cimahpar - Putra 7A.</p>
     </footer>
+
 </body>
 </html>
