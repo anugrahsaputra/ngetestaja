@@ -1,3 +1,10 @@
+/* Reset dasar untuk margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,12 +12,12 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header */
 header {
     background-color: #0071bc;
     color: white;
     text-align: center;
     padding: 20px;
-    position: relative; /* Untuk memastikan posisi Author relatif terhadap header */
 }
 
 header h1 {
@@ -18,17 +25,7 @@ header h1 {
     font-size: 3em;
 }
 
-#author {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 1em;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang transparan hitam */
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
+/* Navigation Bar */
 nav {
     background-color: #005ea2;
     padding: 10px;
@@ -46,6 +43,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Main Content Section */
 .main-content {
     display: flex;
     justify-content: space-between;
@@ -73,6 +71,7 @@ nav a:hover {
     color: #0071bc;
 }
 
+/* Footer */
 footer {
     background-color: #0071bc;
     color: white;
@@ -83,6 +82,7 @@ footer {
     bottom: 0;
 }
 
+/* News Section */
 .news-section {
     background-color: #ffffff;
     margin: 20px;
@@ -113,6 +113,7 @@ footer {
     text-decoration: underline;
 }
 
+/* Contact Info Section */
 .contact-info {
     background-color: #ffffff;
     margin: 20px;
@@ -125,21 +126,19 @@ footer {
     color: #0071bc;
 }
 
-/* Styling untuk tombol "Kembali ke Atas" */
+/* Button Kembali ke Atas */
 #backToTop {
-    display: none; /* Menyembunyikan tombol pada awal */
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
     background-color: #0071bc;
     color: white;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 18px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
     cursor: pointer;
-}
-
-#backToTop:hover {
-    background-color: #005ea2;
-}
+    font-size: 20px;
+    }
